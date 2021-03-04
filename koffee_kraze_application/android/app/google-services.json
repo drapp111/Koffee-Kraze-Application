@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "487449833314",
+    "project_id": "koffee-kraze",
+    "storage_bucket": "koffee-kraze.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487449833314:android:98e94f9c7351a3042b463b",
+        "android_client_info": {
+          "package_name": "com.ravenpyre.koffeekraze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487449833314-ecqan9cav35jtombble0g9c4m79hc5hm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMkGtM3i_X5Hv211tM9T55LYT7etcegu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487449833314-ecqan9cav35jtombble0g9c4m79hc5hm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

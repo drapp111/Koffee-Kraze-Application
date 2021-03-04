@@ -26,6 +26,8 @@ dependencies:
   equatable:
   bloc:
   flutter_bloc:
+  formz:
+  firebase_core: "0.7.0"
   storage_repository:
     path: packages/storage_repository
   database_repository:
@@ -54,6 +56,8 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - images/coffee_cup_graphic.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

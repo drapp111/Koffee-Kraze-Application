@@ -24,13 +24,13 @@ class LoginPage extends StatelessWidget {
                     Material(
                       borderRadius: BorderRadius.all(Radius.circular(50.0)),
                       child: Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Image.asset('images/halo.png', width: 80, height: 80),
+                        padding: EdgeInsets.fromLTRB(8, 50, 8, 8),
+                        child: Image.asset('images/coffee_cup_graphic.png', width: 80, height: 80),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(12),
-                      child:  BlocProvider(
+                      child: BlocProvider(
                         create: (context) {
                           return LoginBloc(
                             authenticationRepository:
@@ -48,16 +48,15 @@ class LoginPage extends StatelessWidget {
                           child: Text("Forgot password",
                               style: TextStyle(
                                   fontSize: 15,
-                                  color: Colors.blue[900],
+                                  color: Colors.brown[900],
                                   fontStyle: FontStyle.italic)),
                         )
                       ],
                     ),
                     RaisedButton(
-                      color: Colors.blue,
-                      splashColor: Colors.yellow[700],
+                      color: Colors.brown[400],
+                      splashColor: Colors.brown[900],
                       onPressed: () {
-                        Navigator.pushNamed(context, '/userSelection');
                       },
                       child: Text(
                         "Register",
@@ -66,56 +65,9 @@ class LoginPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    //TODO: Functions after this point to next TODO need to be
-                    // removed for release
-
-
-                    RaisedButton(
-                      color: Colors.blue,
-                      splashColor: Colors.yellow[700],
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/patientHomePage');
-                      },
-                      child: Text(
-                        "Patient Side",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    RaisedButton(
-                      color: Colors.blue,
-                      splashColor: Colors.yellow[700],
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/adminHomePage');
-                      },
-                      child: Text(
-                        "Physician Side",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-
-                    RaisedButton(
-                      color: Colors.blue,
-                      splashColor: Colors.yellow[700],
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/optional');
-                      },
-                      child: Text(
-                        "optional test",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-
-
-                    //TODO: Ends functions to be removed for release
                     Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
                       Icon(Icons.copyright),
-                      Text('GDC Enterprises, 2020')
+                      Text('Ravenpyre, 2021')
                     ])
                   ]
               )

@@ -10,15 +10,20 @@ class NoDrawerTopBar extends StatelessWidget implements PreferredSizeWidget {
       elevation: 10,
       backgroundColor: Colors.white,
       centerTitle: true,
-      title: Text(
-        'Koffee Kraze',
-        style: TextStyle(
-          color: Colors.brown,
-          fontSize: 30.00,
-          fontWeight: FontWeight.bold,
-          letterSpacing: 2.0,
-        ),
-      ),
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget> [
+          Text(
+            'Koffee Kraze',
+            style: TextStyle(
+              color: Colors.brown,
+              fontSize: 30.00,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 2.0,
+            ),
+          ),
+        ]
+      )
 
     );
   }
